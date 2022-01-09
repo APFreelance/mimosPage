@@ -1,0 +1,409 @@
+/*
+font-family: 'Sansita', sans-serif;
+*/
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #f8e000;
+	margin: 0px;
+	padding: 0px;
+}
+/*-----------PIE DE PAGINA---------*/
+#pie{
+	background-color: #f8e000;
+	position: relative;
+	width: 1349px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 99;
+}
+.art1{
+	position: absolute;
+	width: 250px;
+	margin: 0px;
+	top: 35px;
+    left: 210px;
+}
+.art1 p{
+	margin: 0px;
+	padding: 0px;
+	font-family: sansita;
+	color: #633402;
+	font-size: 1em;
+	line-height: 1;
+}
+.art1 p strong{
+	font-size: 1.1em;
+}
+#pie figure{
+	margin: 0px auto;
+	padding: 0px;
+	width: 300px;
+	height: 110px;
+	transition: all 0.3s;
+}
+#pie figure:hover{
+	transform: scale(1.06);
+}
+#pie figure a img{
+	width: 100%;
+	height: 100%;
+}
+.art2{
+	width: 200px;
+	margin: 0px;
+	position: absolute;
+	top: 42px;
+    right: 132px;
+}
+.art2 a{
+	text-decoration: none;
+	color: #633402;
+
+	transition: all 0.3s;
+	font-family: sansita;
+}
+.art2 a:hover{
+	color: white;
+}
+.art2 a i{
+	font-size: 1.5em;
+	font-family: normal;
+	margin-left: 15px;
+}
+
+/*------------MENU--------------*/
+#menu{
+	/*background-color: #633402;*/
+	background: -webkit-linear-gradient(#874400, #4a2601);
+	width: 1349px;
+	z-index: 100;
+}
+#menu ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px 252px;
+}
+#menu ul li{
+	display: inline-block;
+}
+#menu ul li a{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+	display: block;
+	transition: all 0.3s;
+	padding: 10px 48px;
+	font-family: sansita;
+}
+#menu ul li a:hover{
+	background-color: white;
+	color: #633402;
+}
+/*------------SLIDE------------------*/
+#deslizador{
+	width: 1349px;
+	background-image: url(../img/bgone2.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.slider{
+	background-color: lightblue;
+	width: 1100px;
+	height: 650px;
+	position: relative;
+
+	list-style: none;
+	padding: 0px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.slider img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.8s;
+}
+.slider input[type="radio"]{
+	display: none;
+}
+.slider input[type="radio"]:checked ~ img{
+	opacity: 1;
+}
+.slider input[type="radio"] + label{
+	position: relative;
+	z-index: 50;
+	margin: 20px;
+
+	display: block;
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+.slider input[type="radio"]:checked + label{
+	width: 15px;
+	height: 15px;
+	background-color: white;
+}
+/*--------------SEC_ONE--------------*/
+#sec_one{
+	/*background-color: #f8e000;*/
+	background-image: url(../img/bg_secone.jpg);
+	width: 1349px;
+	height: 350px;
+	padding: 54px 0px;
+}
+#sec_one article{
+	width: 770px;
+	background-color: ;
+	margin: auto;
+}
+#sec_one article h1{
+	background-color: ;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: sansita;
+	font-size: 3em;
+	font-weight: 700;
+	color: #633402;
+}
+#sec_one article p{
+	margin: 20px 0px;
+	padding: 0px 20px;
+	text-align: center;
+	font-family: sansita;
+}
+#sec_one article a{
+	padding: 10px 15px;
+	background-color: white;
+	color: #633402;
+	text-decoration: none;
+	margin: 50px 325px;
+	text-align: center;
+	display: block;
+	font-family: sansita;
+	transition: all 0.5s;
+	border-radius: 8px;
+}
+#sec_one article a:hover{
+	/*background-color: #633402;*/
+	background: -webkit-linear-gradient(#874400, #4a2601);
+	color: white;
+}
+/*--------------SEC_TWO--------------*/
+#sec_two{
+	/*background-color: lightblue;*/
+	background-image: url(../img/bg_sectwo.jpg);
+	width: 1349px;
+	height: 400px;
+}
+#sec_two article{
+	background-color: ;
+	width: 525px;
+	float: left;
+	margin-left: 140px;
+	margin-top: 85px;
+	padding: 15px;
+}
+#sec_two article h2{
+	background-color: ;
+	margin: 0px;
+	padding: 0px;
+	font-family: sansita;
+	font-size: 2em;
+	line-height: 28px;
+	color: #633402;
+}
+#sec_two article p{
+	background-color: ;
+	margin: 0px;
+	margin-top: 25px;
+	font-family: sansita;
+}
+#sec_two article p a{
+	text-decoration: none;
+	color: darkred;
+}
+/*--------------SEC_THREE--------------*/
+#sec_three{
+	background-color: pink;
+	width: 1349px;
+	height: 400px;
+	box-shadow: 0px 0px 30px black;
+}
+#sec_three div{}
+#sec_three div figure{
+	background-color: lightgreen;
+	width: 50%;
+	height: 400px;
+	margin: 0px;
+	float: left;
+}
+#sec_three div figure img{
+	width: 100%;
+	height: 100%;
+}
+#sec_three div figure figcaption{}
+#sec_three div figure figcaption p{
+	background-color: ;
+	margin: 0px;
+	padding: 30px 40px;
+}
+#fig1{
+	position: relative;
+	overflow: hidden;
+}
+#fig1 figcaption{
+	background-color: rgba(255,255,255, 0.9);
+	height: 400px;
+	position: absolute;
+	bottom: -405px;
+	transition: all 0.4s;
+	border-top: 3px solid #633402;
+}
+#fig1 figcaption p{
+	font-family: sansita;
+}
+#fig1:hover > figcaption{
+	bottom: 0px;
+}
+#fig2{
+	position: relative;
+	overflow: hidden;
+}
+#fig2 figcaption{
+	background-color: rgba(255,255,255, 0.9);
+	height: 400px;
+	position: absolute;
+	bottom: -405px;
+	transition: all 0.4s;
+	border-top: 3px solid #633402;
+}
+#fig2 figcaption p{
+	font-family: sansita;
+}
+#fig2:hover > figcaption{
+	bottom: 0px;
+}
+/*--------------SEC_FOUR--------------*/
+#sec_four{
+	background-color: chocolate;
+	width: 1349px;
+	height: 420px;
+}
+#sec_four figure{
+	background-color: lightgreen;
+	width: 50%;
+	height: 100%;
+	margin: 0px;
+	float: left;
+	position: relative;
+}
+#sec_four figure img{
+	width: 100%;
+	height: 100%;
+}
+#sec_four figure article{
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px;
+	position: absolute;
+	top: 78px;
+	left: 120px;
+	width: 475px;
+	height: 270px;
+	border-radius: 10px;
+	font-family: sansita;
+	box-shadow: 0px 0px 15px black;
+}
+#sec_four figure article h2{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #633402;
+}
+#sec_four figure article p{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 25px;
+}
+#sec_four figure article p a{
+	text-decoration: none;
+	color: darkred;
+}
+/*--------------FOOTER--------------*/
+footer{
+	background-color: #f8e000;
+	position: relative;
+	width: 1349px;
+	height: 150px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 99;
+	border-top: 5px solid #633402;
+}
+.part1{
+	position: absolute;
+	width: 250px;
+	margin: 0px;
+	top: 35px;
+    left: 210px;
+    font-family: sansita;
+	font-size: 1.2em;
+}
+.part1 a{
+	text-decoration: none;
+	color: #633402;
+}
+.part1 a:hover{
+	text-decoration: underline;
+}
+.part1 p{
+	line-height: 20px;
+    font-style: normal;
+    font-size: 0.8em;
+    color: #633402;
+}
+footer figure{
+	margin: 16px auto;
+	padding: 0px;
+	width: 300px;
+	height: 110px;
+	transition: all 0.3s;
+}
+footer figure img{
+	width: 100%;
+	height: 100%;
+}
+.part2{
+	width: 200px;
+	margin: 18px 0px;
+	position: absolute;
+	top: 42px;
+    right: 132px;
+}
+.part2 a{
+	text-decoration: none;
+	color: #633402;
+
+	transition: all 0.3s;
+	font-family: sansita;
+}
+.part2 a:hover{
+	color: white;
+}
+.part2 a i{
+	font-size: 1.5em;
+	font-family: normal;
+	margin-left: 15px;
+}
